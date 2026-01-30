@@ -1,0 +1,28 @@
+name: plano-cuidados-multi
+owner_org: fundacao-hospitalar-do-estado-de-minas-gerais-fhemig
+profile: data-package
+resources:
+  - description: Insira a descrição/explicação detalhada deste recurso.
+    dialect:
+      delimiter: ;
+    encoding: utf-8-sig
+    format: csv
+    hashing: md5
+    name: plano-cuidado-multi
+    path: data/plano-cuidado-multi.csv
+    profile: tabular-data-resource
+    schema:
+      fields:
+        - name: unidade
+          type: string
+        - name: ano
+          type: integer
+        - name: mes
+          type: integer
+        - name: pacientes_pcm
+          type: geopoint
+        - name: internacoes
+          type: geopoint
+    scheme: file
+    title: Insira um título humanamente legível para este recurso.
+title: Plano cuidados multi
